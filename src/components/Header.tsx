@@ -15,25 +15,25 @@ export default function Header() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <a
-              href="#"
+              href="/"
               className="text-gray-600 hover:text-purple-600 transition-colors"
             >
               Главная
             </a>
             <a
-              href="#"
+              href="/editor"
               className="text-gray-600 hover:text-purple-600 transition-colors"
             >
               Редактор
             </a>
             <a
-              href="#"
+              href="/examples"
               className="text-gray-600 hover:text-purple-600 transition-colors"
             >
               Примеры
             </a>
             <a
-              href="#"
+              href="/docs"
               className="text-gray-600 hover:text-purple-600 transition-colors"
             >
               Документация
@@ -44,9 +44,11 @@ export default function Header() {
             <Button variant="ghost" size="sm">
               <Icon name="Github" size={18} />
             </Button>
-            <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-              Начать
-            </Button>
+            <a href="/editor">
+              <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                Начать
+              </Button>
+            </a>
           </div>
         </div>
       </div>

@@ -24,17 +24,25 @@ export default function Index() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button
-                size="lg"
-                className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-4"
-              >
-                <Icon name="Play" size={20} className="mr-2" />
-                Начать создание
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-4">
-                <Icon name="Eye" size={20} className="mr-2" />
-                Посмотреть примеры
-              </Button>
+              <a href="/editor">
+                <Button
+                  size="lg"
+                  className="bg-purple-600 hover:bg-purple-700 text-lg px-8 py-4"
+                >
+                  <Icon name="Play" size={20} className="mr-2" />
+                  Начать создание
+                </Button>
+              </a>
+              <a href="/examples">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-4"
+                >
+                  <Icon name="Eye" size={20} className="mr-2" />
+                  Посмотреть примеры
+                </Button>
+              </a>
             </div>
 
             {/* Feature badges */}
@@ -63,10 +71,12 @@ export default function Index() {
             Присоединяйтесь к тысячам разработчиков, создающих удивительные 3D
             сцены
           </p>
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-            Открыть редактор
-            <Icon name="ArrowRight" size={20} className="ml-2" />
-          </Button>
+          <a href="/editor">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+              Открыть редактор
+              <Icon name="ArrowRight" size={20} className="ml-2" />
+            </Button>
+          </a>
         </div>
       </section>
     </div>
